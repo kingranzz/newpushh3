@@ -12,7 +12,7 @@ const chalk = require("chalk");
 const fs = require("fs");
 
 // SETING OWNER //
-global.owner = "6285930467004"
+global.owner = "6289649810140"
 global.namaOwner = "Lexzymarket"
 global.thumbnail = "https://files.catbox.moe/f9ar3y.jpg"
 global.title = "Pushkontak Lexzy - V3"
