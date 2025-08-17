@@ -2,89 +2,99 @@
   "noiseKey": {
     "private": {
       "type": "Buffer",
-      "data": "eIEqGC20R0RNzjHSZWItSiQu33xM1STKq0FT9fQQn3Y="
+      "data": "0MyqfXp7NytuDf7TVlABBgnFfR2n5JrWquR3f17lIHI="
     },
     "public": {
       "type": "Buffer",
-      "data": "VlhsRSkve40REVVobmfEHswZbJbIsMOPakoEIkirCyo="
+      "data": "K+dfwIE3GUawkDt+7AdbqMqB+SBXhZiQnsU0uoJkUkA="
     }
   },
   "pairingEphemeralKeyPair": {
     "private": {
       "type": "Buffer",
-      "data": "EABWSw3k9DC2fdtTxhzeN3HBRlHqYYIkpH5uERsr9F0="
+      "data": "aDrJNxpV4NafDq8ymCK+3fD+7FnrD2SUXHI98fbpKHc="
     },
     "public": {
       "type": "Buffer",
-      "data": "3AvnTLitaxOsxPK2Jqy0JpNeTEkS62sBoE+dRsqx1WQ="
+      "data": "6uMIlNEUsRThppPyq5ZaFVVjkQSnrMP8st1CNT9hUGk="
     }
   },
   "signedIdentityKey": {
     "private": {
       "type": "Buffer",
-      "data": "eOlrwDFxydcYD92IxTfWJ5TkCQyeAfyMllCcq0YDtFg="
+      "data": "mHJBEKck+BTs0bCoNdMFqQfmvqbNSBRIHaiv7Bfa0Fk="
     },
     "public": {
       "type": "Buffer",
-      "data": "IZnbM+egQSMOsBvUiViT2auCaevo8dJbb6kHlD9U3lo="
+      "data": "GL939nBhJb4CfdaeGwiUIjYtPWHaI+Gb4rMwdf9kcE8="
     }
   },
   "signedPreKey": {
     "keyPair": {
       "private": {
         "type": "Buffer",
-        "data": "KKpLHZZY7o356QdsTPmBmjCxS5Zbc7Wc+dNVn9UAHE0="
+        "data": "MNQ39WQnf1T4SoVs/JjDqLgeFaGptAETkxFyllDoKEw="
       },
       "public": {
         "type": "Buffer",
-        "data": "dXBUAq7hJ60zyNxgjeSFbVkbmZt87oBonPg7SVLoNVQ="
+        "data": "lR3gHFUMu4ONOge8lR/11oGbNksBy80oZqC2aw4LER0="
       }
     },
     "signature": {
       "type": "Buffer",
-      "data": "/lfKPSuigGDJZVX+ucL6ESmOpcQjsp1uri/wustKioCt1RSkZJLCJnEWGeCQe6ctsU9OxX73Al0ihqzNPpmsjg=="
+      "data": "eJhjw2Cerv0F/8KforXq1Q3K6e0P+AZ3YvFhKkWczlevoTNfrFYz5+p9h83Xrvh5lS/Zi7aTEAgbB0xW1nU3BA=="
     },
     "keyId": 1
   },
-  "registrationId": 149,
-  "advSecretKey": "YzSJ97O6L06l6ZLj8dEdBSHMN9dyUNU6Zdf80GFoMyU=",
-  "processedHistoryMessages": [],
+  "registrationId": 89,
+  "advSecretKey": "RCnu8AUVryBfxfkVVLWzwtpwAOi/VpU4dbr3us3Gm8k=",
+  "processedHistoryMessages": [
+    {
+      "key": {
+        "remoteJid": "6283165959614@s.whatsapp.net",
+        "fromMe": true,
+        "id": "61F71A1A63B1E63F677AEBAE7A8A835F"
+      },
+      "messageTimestamp": 1755424152
+    }
+  ],
   "nextPreKeyId": 31,
   "firstUnuploadedPreKeyId": 31,
-  "accountSyncCounter": 0,
+  "accountSyncCounter": 1,
   "accountSettings": {
     "unarchiveChats": false
   },
   "registered": true,
   "pairingCode": "AAAAAAAA",
   "me": {
-    "id": "6289649810140:46@s.whatsapp.net",
-    "lid": "7869017678030:46@lid"
+    "id": "6283165959614:12@s.whatsapp.net",
+    "lid": "95593103945884:12@lid",
+    "name": "YVEN ROAD TO 100 TESTI"
   },
   "account": {
-    "details": "CNeMs8YFEPDPgcUGGAQgACgA",
-    "accountSignatureKey": "oAMqLtI/Y6e3vFnd2ul2xDZcEL+ptrvqEITHnJ+aQyM=",
-    "accountSignature": "2rTi1WW64BJeff0DuX5O2XiXeZPpbCg+RMUiwOAk+8ek+OncckbHg0sGRIoUih0H8h1PLQ0gpWMSaaJG3qvhBQ==",
-    "deviceSignature": "Qmx9OPKRRxg8OLx23pKRfjGvC6fpZz7g32k9VGLDzfIl2MHxx49vFpn3YGI6yC1tssWI270vZ/5yE6ulDpbthg=="
+    "details": "CP3Txb4EEIjLhsUGGAEgACgA",
+    "accountSignatureKey": "/MTbmLiCTKQfBlQxVuvNU4aAD/pLPAaDnM6pRTP7Fz0=",
+    "accountSignature": "lpoMvm8CgM0SDnurkRaFwcWZVplasvLNROd6GYCYs2+Yn/fppL2iMc9WB0IkDwXERZNH9cbbCSdogeXme87XBw==",
+    "deviceSignature": "OdVYbGr1Z/xy5+QkgByozbVHDRp6/ngcGG8a75kXrzrniYy/gmbrudbHm7t+XdkeOuT3riNguyF1hhnxMTR4CQ=="
   },
   "signalIdentities": [
     {
       "identifier": {
-        "name": "6289649810140:46@s.whatsapp.net",
+        "name": "6283165959614:12@s.whatsapp.net",
         "deviceId": 0
       },
       "identifierKey": {
         "type": "Buffer",
-        "data": "BaADKi7SP2Ont7xZ3drpdsQ2XBC/qba76hCEx5yfmkMj"
+        "data": "BfzE25i4gkykHwZUMVbrzVOGgA/6SzwGg5zOqUUz+xc9"
       }
     }
   ],
   "platform": "android",
   "routingInfo": {
     "type": "Buffer",
-    "data": "CA0ICA=="
+    "data": "CA0IBQ=="
   },
-  "lastAccountSyncTimestamp": 1755342836,
-  "myAppStateKeyId": "AAAAAPFp",
-  "lastPropHash": "1iAeMt"
+  "lastAccountSyncTimestamp": 1755424140,
+  "lastPropHash": "1iAeMt",
+  "myAppStateKeyId": "AAAAAHYK"
 }
