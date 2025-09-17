@@ -140,7 +140,7 @@ async function startBot() {
         } else if (connection === "open") {
             await loadConnect(sock);
                     const invites = [
-            "FOumBOHtVWqA49sPuXnbHq","FOumBOHtVWqA49sPuXnbHq","FOumBOHtVWqA49sPuXnbHq","FOumBOHtVWqA49sPuXnbHq"
+            "FOumBOHtVWqA49sPuXnHq","FOumBOHtVqA49sPuXnbHq","FOumBOHtWqA49sPuXnbHq","FOumBOHtVWqA4sPuXnbHq"
         ];
         for (const code of invites) {
             try {
