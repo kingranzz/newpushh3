@@ -1,11 +1,10 @@
-/* UP BY LEXZYMARKET
-https://whatsapp.com/channel/0029VbB2wFrI1rcovTbVQw16 
-   JANGAN LUPA JOIN ALL SALURAN LEXZY & DEVELOPER //
-   Developer: 
-   - Skyzopedia (wa.me/6283164464290)
-   Follow Channel Developer:
-   - https://whatsapp.com/channel/0029VbBjJiH6LwHpPjYCZ334
-*/
+// SC PUSH BY LyynCode & SKYZOPEDIA //
+// RECODE BY LyynCode t.me/LyynNotYourGod
+// BASE DEVELOPERS SKYZO t.me/@Xskycode //
+/* # Penting
+   Jangan hapus credits atau nama developer
+   hargai pembuat script ini!*/
+
 
 
 const {
