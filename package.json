@@ -1,14 +1,14 @@
 {
-  "name": "LyynCode-Bot",
-  "version": "2.0.0",
+  "name": "Lexzy simpel menu",
+  "version": "1.0.0",
   "description": "WhatsApp Bot using Baileys",
-  "main": "index.js",
+  "main": "main.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node main.js"
   },
   "dependencies": {
     "@hapi/boom": "^10.0.0",
-    "@whiskeysockets/baileys": "github:skyzopedia/bail",
+    "@whiskeysockets/baileys": "github:skyzopedia/BaileysV2",
     "awesome-phonenumber": "^2.64.0",
     "axios": "^0.24.0",
     "chalk": "^4.1.2",
@@ -16,11 +16,10 @@
     "child_process": "^1.0.2",
     "file-type": "^16.5.3",
     "fluent-ffmpeg": "^2.1.2",
-    "jimp": "^0.22.12",
+    "jimp": "^0.16.1",
     "moment-timezone": "^0.5.34",
     "node-fetch": "^2.6.7",
     "node-webpmux": "^3.1.0",
-    "node-upload-images": "^1.0.1",
     "os": "^0.1.2",
     "pino": "^8.0.0",
     "qrcode-terminal": "^0.12.0",
