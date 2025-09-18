@@ -12,18 +12,18 @@ const chalk = require("chalk");
 const fs = require("fs");
 
 // SETING OWNER //
-global.owner = "6285930467004"
-global.namaOwner = "Lexzymarket"
+global.owner = "6282393734303"
+global.namaOwner = "RanzCodeBOT"
 global.thumbnail = "https://files.catbox.moe/f9ar3y.jpg"
-global.title = "Pushkontak Lexzy - V3"
-global.linkChannel = "https://whatsapp.com/channel/0029VbB2wFrI1rcovTbVQw16"
-global.linkGrup = "https://chat.whatsapp.com/J5YOSY7WgtVJuVB9Jqvl6c?mode=ac_t"
+global.title = "PUSHKONTAK"
+global.linkChannel = "https://whatsapp.com/channel/"
+global.linkGrup = "https://chat.whatsapp.com/?mode=ac_t"
 global.dana = "0856242937893"
 global.ovo = "Tidak tersedia"
 global.gopay = "Tidak tersedia"
 global.qris = "https://files.catbox.moe/shtxdh.jpg"
 // JEDA PUSH BOSS //
-global.JedaPushkontak = 1500 // 1000 = 1detik
+global.JedaPushkontak = 10000 // 1000 = 1detik
 global.JedaJpm = 3000  // 1000 = 1detik
 // CPANEL BOSS //
 global.egg = "15" // Isi id egg
