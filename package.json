@@ -8,7 +8,7 @@
   },
   "dependencies": {
     "@hapi/boom": "^10.0.0",
-    "@whiskeysockets/baileys": "github:skyzopedia/BaileysV2",
+    "@whiskeysockets/baileys": "npm:@shennmine/baileys",
     "awesome-phonenumber": "^2.64.0",
     "axios": "^0.24.0",
     "chalk": "^4.1.2",
