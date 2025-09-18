@@ -9,7 +9,7 @@
 const chalk = require("chalk");
 const fs = require("fs");
 
-global.owner = "6288983703837"
+global.owner = "6282393734303"
 global.namaOwner = "RanzCodeBOT"
 global.mode_public = true
 global.versiBot = "RannCodeBOT"
