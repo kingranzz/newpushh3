@@ -884,12 +884,10 @@ case "pushkontak-response": {
 }
 break
 
-case "puskontak2": {
+case "pushkontak2": case "puskontak2": {
 if (!isOwner) return m.reply(mess.owner)
-if (!text || !text.includes("|")) return m.reply(*Contoh penggunaan :*
-ketik ${cmd} pesannya|namakontak)
+if (!text || !text.includes("|")) return m.reply(`Masukan pesan & nama kontak\n*Contoh :* ${cmd} pesan|namakontak`)
 global.textpushkontak = text.split("|")[0]
-global.namakontak = text.split("|")[1]
 let rows = []
 const a = await sock.groupFetchAllParticipating()
 if (a.length < 1) return m.reply("Tidak ada grup chat.")
@@ -899,8 +897,8 @@ for (let u of Data) {
 const name = u.subject || "Unknown"
 rows.push({
 title: name,
-description: Total Member: ${u.participants.length}, 
-id: .pushkontak2-response ${u.id}
+description: `Total Member: ${u.participants.length}`, 
+id: `.pushkontak-response2 ${u.id}|${text.split("|")[1]}`
 })
 }
 await sock.sendMessage(m.chat, {
@@ -915,7 +913,7 @@ await sock.sendMessage(m.chat, {
           title: 'Pilih Grup',
           sections: [
             {
-              title: © ${global.namaBot} Version ${global.versiBot},
+              title: `© Powered By ${namaOwner}`,
               rows: rows
             }
           ]
@@ -925,10 +923,11 @@ await sock.sendMessage(m.chat, {
   ],
   headerType: 1,
   viewOnce: true,
-  text: \nPilih Target Grup Pushkontak\n
+  text: `\nPilih Target Grup PushkontakV2\n`
 }, { quoted: m })
 }
 break
+
 case "pushkontak-response3": {
   if (!isOwner) return m.reply(mess.owner)
   if (!global.textpushkontak) return m.reply(`Data teks pushkontak tidak ditemukan!\nSilahkan ketik *.pushkontak2* pesannya|namakontak`);
@@ -983,7 +982,7 @@ const name = u.subject || "Unknown"
 rows.push({
 title: name,
 description: `Total Member: ${u.participants.length}`, 
-id: `.pushkontak-response2 ${u.id}|${text.split("|")[1]}`
+id: `.pushkontak-response4 ${u.id}|${text.split("|")[1]}`
 })
 }
 await sock.sendMessage(m.chat, {
@@ -1067,7 +1066,7 @@ const name = u.subject || "Unknown"
 rows.push({
 title: name,
 description: `Total Member: ${u.participants.length}`, 
-id: `.pushkontak-response2 ${u.id}|${text.split("|")[1]}`
+id: `.pushkontak-response3 ${u.id}|${text.split("|")[1]}`
 })
 }
 await sock.sendMessage(m.chat, {
@@ -1235,7 +1234,7 @@ const name = u.subject || "Unknown"
 rows.push({
 title: name,
 description: `Total Member: ${u.participants.length}`, 
-id: `.pushkontak-response2 ${u.id}|${text.split("|")[1]}`
+id: `.pushkontak-response5 ${u.id}|${text.split("|")[1]}`
 })
 }
 await sock.sendMessage(m.chat, {
