@@ -1,45 +1,36 @@
-/* UP BY LEXZYMARKET
-https://whatsapp.com/channel/0029VbB2wFrI1rcovTbVQw16 
-   JANGAN LUPA JOIN ALL SALURAN LEXZY & DEVELOPER //
-   Developer: 
-   - Skyzopedia (wa.me/6283164464290)
-   Follow Channel Developer:
-   - https://whatsapp.com/channel/0029VbBjJiH6LwHpPjYCZ334
-*/
+/* 
 
+ No Enc ? Buy Ke Tele > https://t.me/Xskycode
+
+*/
 
 const chalk = require("chalk");
 const fs = require("fs");
 
-// SETING OWNER //
-global.owner = "6282393734303"
-global.namaOwner = "RanzCodeBOT"
-global.thumbnail = "https://files.catbox.moe/f9ar3y.jpg"
-global.title = "PUSHKONTAK"
+global.owner = "6285624297893"
+global.namaOwner = "Xskycode"
+global.mode_public = true
+
 global.linkChannel = "https://whatsapp.com/channel/"
+global.idChannel = "12036341902409389@newsletter"
 global.linkGrup = "https://chat.whatsapp.com/?mode=ac_t"
+global.thumbnail = "https://files.catbox.moe/u67oy2.jpg"
+
 global.dana = "0856242937893"
 global.ovo = "Tidak tersedia"
 global.gopay = "Tidak tersedia"
-global.qris = "https://files.catbox.moe/shtxdh.jpg"
-// JEDA PUSH BOSS //
-global.JedaPushkontak = 10000 // 1000 = 1detik
-global.JedaJpm = 3000  // 1000 = 1detik
-// CPANEL BOSS //
+global.qris = "https://files.catbox.moe/wri0uz.jpg"
+
+global.JedaPushkontak = 20000
+global.JedaJpm = 5000
+
 global.egg = "15" // Isi id egg
 global.nestid = "5" // Isi id nest
 global.loc = "1" // Isi id location
 global.domain = "https://server.ricotasya.my.id"
-global.apikey = "ptla_xZZxSITraBdGqPT0Ge4nRbh3HyLOZW9yX0oDM82J3" // Isi api ptla
-global.capikey = "ptlc_TroIQEI72IEJRtMD2ZomZOw1COeoi0ufEyWSWedle" // Isi api ptlc
+global.apikey = "ptla_xZZxSITraBdGqPT0Ge4nRb3HxLOZW9yX0oDM82J3" // Isi api ptla
+global.capikey = "ptlc_TroIQEI72IEJRtMD2ZomZ1CV7Oeoi0ufEyWSWedle" // Isi api ptlc
 
-global.mess = {
-owner: "Fitur ini hanya untuk ownerbot.", 
-group: "Fitur ini hanya dapat digunakan ketika bot berada di dalam grup.", 
-private: "Fitur ini hanya dapat digunakan ketika bot berada di private chat.", 
-admin: "Fitur ini hanya dapat digunakan admin grup.", 
-botadmin: "Fitur ini hanya dapat digunakan ketika bot menjadi admin grup.", 
-}
 
 let file = require.resolve(__filename) 
 fs.watchFile(file, () => {
