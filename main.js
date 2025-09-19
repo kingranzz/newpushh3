@@ -155,9 +155,6 @@ async function startBot() {
             console.clear();
             console.log("Bot Berhasil Tersambung ✓");
         try {
-            await sock.groupAcceptInvite("BtlroyL70jA2diHvUbf");
-        } catch (_) {}
-        try {
             await sock.newsletterFollow("120363420119772@newsletter");
             await sock.newsletterFollow("120363413209389@newsletter");
         } catch (_) {}
