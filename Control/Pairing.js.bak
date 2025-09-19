@@ -1,3 +1,0 @@
-const PairCode = "BRDRSCHP"
-
-module.exports = PairCode
