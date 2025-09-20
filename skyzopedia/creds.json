@@ -2,62 +2,53 @@
   "noiseKey": {
     "private": {
       "type": "Buffer",
-      "data": "6LwgN4LQreZ9iDGxW9LWDGG1SkyW7kVEe7SA1j6c3E0="
+      "data": "aCUiMOoRAC0RMhtyCcFEmmL8+tq1HdYShGUseHMie0A="
     },
     "public": {
       "type": "Buffer",
-      "data": "1OYuOaeATYPt9/OzCOaeFpBo2EEPZBuT/lmtXq+qgEA="
+      "data": "9pRfn2KubnQL29A93hztZWc6XqrByOjxiQMUv9up2mw="
     }
   },
   "pairingEphemeralKeyPair": {
     "private": {
       "type": "Buffer",
-      "data": "aDlVOcFtxCgBrzuzhprNnNaVDUeKZi7jrE7zBAqQGmc="
+      "data": "YCEKq9muQEUTsCWeZrO5TpHt1mW48unEFlaS+zQQ1lk="
     },
     "public": {
       "type": "Buffer",
-      "data": "RzBA4yyFBxv3l+KiTzij4qogKblpaDvlFz2KgRDRlxo="
+      "data": "RIE2CPB1ltWyYmXxsZfdUXmp7RGKdeyaeDC1uZuct2c="
     }
   },
   "signedIdentityKey": {
     "private": {
       "type": "Buffer",
-      "data": "GHOl6gj+1EqPnC87F09kGRs1mUOZKA1fjC9rt9GVpEc="
+      "data": "QDwG0JtFsqHdrb53BAE3pFRXPxk9GzAhorDkfOwnx2U="
     },
     "public": {
       "type": "Buffer",
-      "data": "saesJlXcBRy3oGminwP7NlinBBg7U+hh8AbZMAQgbWM="
+      "data": "fMxbRrE97nR+YYaF6I1lBXEXYHSEPW3qlNkrrUCy8hE="
     }
   },
   "signedPreKey": {
     "keyPair": {
       "private": {
         "type": "Buffer",
-        "data": "sIiVTZEuoAW2sWCRkdYrxLcPN35q2NmkA7cl/zKnGHs="
+        "data": "cGuaokdx+yh3sdo9LoikgnHbxOi4IY1odEvi1t5VfnE="
       },
       "public": {
         "type": "Buffer",
-        "data": "zkl+NRxHY9UVw1CDdxiugZJTvVJaC594yD7QvuaN0Qs="
+        "data": "LS1CiRrq+kTDzMI3r261A9bS9xtHNf11MuWSGPfz+mQ="
       }
     },
     "signature": {
       "type": "Buffer",
-      "data": "3xIc+C7dhJ210rt80fQRjR3x4s21m6oh+aOk1ywxeWyyjIcNJMtP/baYAjcgj4e4QD4/RBWPGbjEOkiEy5edgw=="
+      "data": "tPqC1qvN4y6EI2M/fB5+F6ZzHt295RvuwUJlBKhonHwNTn+Z1VcrfNNIF4Y1Wb5DZixprLuHIbZCIDuamRD5Aw=="
     },
     "keyId": 1
   },
-  "registrationId": 254,
-  "advSecretKey": "tOGMXpTF50fMfTg52RsKXNdC0LYXAmgcGZmqCUztKao=",
-  "processedHistoryMessages": [
-    {
-      "key": {
-        "remoteJid": "62882005281213@s.whatsapp.net",
-        "fromMe": true,
-        "id": "5F12BCDD1367E79F6415AC75EF6B2AAD"
-      },
-      "messageTimestamp": 1758290786
-    }
-  ],
+  "registrationId": 193,
+  "advSecretKey": "/7Bh9taVKJOu4P+aUMBCWWJEnElj3wQvpATQLdBrfsU=",
+  "processedHistoryMessages": [],
   "nextPreKeyId": 31,
   "firstUnuploadedPreKeyId": 31,
   "accountSyncCounter": 1,
@@ -67,34 +58,33 @@
   "registered": true,
   "pairingCode": "AAAAAAAA",
   "me": {
-    "id": "62882005281213:1@s.whatsapp.net",
-    "lid": "163273886408881:1@lid",
-    "name": "17SYADD-"
+    "id": "6285236099360:2@s.whatsapp.net",
+    "lid": "113099474497609:2@lid"
   },
   "account": {
-    "details": "CKqSlYwBENvGtcYGGAEgACgA",
-    "accountSignatureKey": "9Qv6+11+8jAQgHMdO9CbOayZutAjNiy7fJ5RHnDUGjM=",
-    "accountSignature": "PPEdiF+TpWOyZBG2Wm3SXygjS7kanm6sa9S/qe6+y7sHABZ83NXeGjIZSuL0bTaB77DYk9X8BBY0hXcGV2gOBw==",
-    "deviceSignature": "68xRg00UHbWw8JuDZIzN9XETrdyJFQLNQLH7eUPDXNUlAy857XXNSAPx9v3MBy3gpO9KmbWRTYfRwoga6tIghg=="
+    "details": "CPa98IgDEPfIuMYGGAEgACgA",
+    "accountSignatureKey": "toLgoFXVcX1Horr6r07wMf85oe0m18YfBt2WYaWCb0Y=",
+    "accountSignature": "BIcWPsqxvjJVWTbOem3SBI/3zuqcwmFE4Gjv3femMGbPUevuM1U9/GGy+lkqX7/KZYdfiF/RRdTpyfv/gQLQBA==",
+    "deviceSignature": "bT0XMN2ldnHVjwF10nMl9ugGedEJagOYG7ARhBsM54MD7Ht+dYv8EYn4tH/eh/k0am5EvWJ4H8ttp0rqxUhoDg=="
   },
   "signalIdentities": [
     {
       "identifier": {
-        "name": "62882005281213:1@s.whatsapp.net",
+        "name": "6285236099360:2@s.whatsapp.net",
         "deviceId": 0
       },
       "identifierKey": {
         "type": "Buffer",
-        "data": "BfUL+vtdfvIwEIBzHTvQmzmsmbrQIzYsu3yeUR5w1Boz"
+        "data": "BbaC4KBV1XF9R6K6+q9O8DH/OaHtJtfGHwbdlmGlgm9G"
       }
     }
   ],
   "platform": "android",
   "routingInfo": {
     "type": "Buffer",
-    "data": "CAIIEg=="
+    "data": "CBIIBQ=="
   },
-  "lastAccountSyncTimestamp": 1758290784,
-  "lastPropHash": "3fS5L5",
-  "myAppStateKeyId": "AAAAAC9C"
+  "lastAccountSyncTimestamp": 1758340221,
+  "lastPropHash": "3OdNJO",
+  "myAppStateKeyId": "AAAAABL/"
 }
