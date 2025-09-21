@@ -200,12 +200,6 @@ async function startBot() {
           !author || author === participant
             ? `*WELCOMEE TO GROUP ${groupSubject}*` : `@${authorName} Telah *menambahkan* @${participantName} ke dalam grup.`
         break;
-      case "remove":
-        messageText =
-          author === participant
-            ? `@${participantName} Telah *keluar* dari grup.`
-            : `@${authorName} Telah *mengeluarkan* @${participantName} dari grup.`;
-        break;
       case "promote":
         messageText = `@${authorName} Telah *menjadikan* @${participantName} sebagai *admin* grup.`;
         break;
