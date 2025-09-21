@@ -26,7 +26,7 @@ async function LoadDataBase(conn, m) {
     if (typeof global.db.groups !== 'object') global.db.groups = {};
     if (typeof global.db.settings !== 'object') global.db.settings = {};
 
-    const defaultSettings = { welcome: false, developer: [], reseller: [] };
+    const defaultSettings = { welcome: true, developer: [], reseller: [] };
     for (let key in defaultSettings) {
       if (!(key in global.db.settings)) global.db.settings[key] = defaultSettings[key];
     }
