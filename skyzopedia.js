@@ -626,13 +626,66 @@ if (!text) return m.reply(`*Contoh :* ${cmd} pesannya & bisa dengan foto juga`)
 }
 break
 
+case "brat": {
+if (!text) return m.reply(`*Contoh penggunaan :*
+ketik ${cmd} teksnya`)
+await sock.sendMessage(m.chat, {
+  buttons: [
+    {
+    buttonId: 'action',
+    buttonText: { displayText: 'ini pesan interactiveMeta' },
+    type: 4,
+    nativeFlowInfo: {
+        name: 'single_select',
+        paramsJson: JSON.stringify({
+          title: 'Pilih Type',
+          sections: [
+            {
+              title: `© ${global.namaOwner} Version ${global.versiBot}`,
+              rows: [
+                {
+                  title: 'Brat Image',
+                  description: 'Sticker brat dengan type foto', 
+                  id: `.brat1 ${text}`
+                }
+              ]
+            }
+          ]
+        })
+      }
+      }
+  ],
+  headerType: 1,
+  viewOnce: true,
+  text: "\nPilih Type Sticker Brat (Image/Gif)\n"
+}, { quoted: m })
+}
+break
+
+case "brat1": {
+if (!text) return
+const response = `https://api.nekorinn.my.id/maker/brat-v2?text=${encodeURIComponent(teks)}`
+await m.reply(`Memproses pembuatan sticker . . .`)
+await sock.sendStimg(m.chat, media, m, {packname: "VanzzOffc."})
+}
+break
+
+case "bratvid2": {
+if (!text) return
+const media = `https://lyyn-api.my.id/imagecreator/bratvid?text=${encodeURIComponent(text)}`
+await m.reply(`Memproses pembuatan sticker . . .`)
+await sock.sendStimg(m.chat, media, m, {packname: "Vanzz Offc."})
+}
+break
+
+
 case "sticker": case "stiker": case "sgif": case "s": {
 if (!/image|video/.test(mime)) return m.reply("Kirim foto dengan caption .sticker")
 if (/video/.test(mime)) {
 if ((qmsg).seconds > 15) return m.reply("Durasi vidio maksimal 15 detik!")
 }
 var media = await sock.downloadAndSaveMediaMessage(qmsg)
-await sock.sendStimg(m.chat, media, m, {packname: "Xskycode."})
+await sock.sendStimg(m.chat, media, m, {packname: "RanzCodeBOT."})
 }
 break
 
