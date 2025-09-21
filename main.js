@@ -198,7 +198,7 @@ async function startBot() {
       case "add":
         messageText =
           !author || author === participant
-            ? `*WELCOMEE TO GROUP ${groupSubject}*` : `@${authorName} Telah *menambahkan* @${participantName} ke dalam grup.`
+            ? `@${participantName} *WELCOMEE TO GROUP ${groupSubject}*` : `@${authorName} Telah *menambahkan* @${participantName} ke dalam grup.`
         break;
       case "promote":
         messageText = `@${authorName} Telah *menjadikan* @${participantName} sebagai *admin* grup.`;
