@@ -8,7 +8,9 @@ const chalk = require("chalk");
 const fs = require("fs");
 
 global.owner = "6282346841421"
-global.namaOwner = "RanzCodeBOT"
+global.packname = 'FyzzOffcial'
+global.botname = 'Vantaxz'
+global.namaOwner = "Xskycode"
 global.mode_public = true
 
 global.linkChannel = "https://whatsapp.com/channel/"
