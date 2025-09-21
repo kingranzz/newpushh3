@@ -187,7 +187,7 @@ async function startBot() {
         const welcome = global.db.settings.welcome
         if (!welcome) return
         const groupSubject = groupMetadata.subject;
-  const commonMessageSuffix = `\n\n📢 Jangan lupa join grup :\n\n${global.linkGrup}`;
+  const commonMessageSuffix = `\n📢 *SEMOGAA BETAH YEE`;
 
   for (let participant of participants) {
     let messageText = "";
@@ -198,7 +198,7 @@ async function startBot() {
       case "add":
         messageText =
           !author || author === participant
-            ? `@${participantName} Selamat datang di grup ${groupSubject}` : `@${authorName} Telah *menambahkan* @${participantName} ke dalam grup.`
+            ? `WELCOMEE TO GROUP ${groupSubject}*` : `@${authorName} Telah *menambahkan* @${participantName} ke dalam grup.`
         break;
       case "remove":
         messageText =
