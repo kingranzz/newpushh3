@@ -137,7 +137,7 @@ const teks = `
   ┏❐  *⌜ Mainmenu ⌟*
   ┃⭔.tourl
   ┃⭔.tourl2
-  ┃⭔.sticker
+  ┃⭔.brat
   ┃⭔.cekidch
   ┗❐
 
@@ -626,55 +626,69 @@ if (!text) return m.reply(`*Contoh :* ${cmd} pesannya & bisa dengan foto juga`)
 }
 break
 
+case "qc": {
+if (!text) return reply("teksnya")
+let warna = ["#000000", "#ff2414", "#22b4f2", "#eb13f2"]
+var ppuser
+try {
+ppuser = await sock.profilePictureUrl(m.sender, 'image')
+} catch (err) {
+ppuser = 'https://telegra.ph/file/a059a6a734ed202c879d3.jpg'
+}
+const json = {
+"type": "quote",
+"format": "png",
+"backgroundColor": "#000000",
+"width": 812,
+"height": 968,
+"scale": 2,
+"messages": [
+ {
+"entities": [],
+"avatar": true,
+"from": {
+"id": 1,
+"name": m.pushName,
+"photo": {
+ "url": ppuser
+}
+},
+"text": text,
+"replyMessage": {}
+ }
+]
+};
+const response = axios.post('https://bot.lyo.su/quote/generate', json, {
+headers: {'Content-Type': 'application/json'}
+}).then(async (res) => {
+ const buffer = Buffer.from(res.data.result.image, 'base64')
+ let tempnya = "./database/sampah/"+m.sender+".png"
+await fs.writeFile(tempnya, buffer, async (err) => {
+if (err) return reply("Error")
+await sock.sendAsSticker(m.chat, tempnya, m, {packname: global.packname})
+await fs.unlinkSync(`${tempnya}`)
+})
+})
+}
+break
+
 case "brat": {
-if (!text) return m.reply(`*Contoh penggunaan :*
-ketik ${cmd} teksnya`)
-await sock.sendMessage(m.chat, {
-  buttons: [
-    {
-    buttonId: 'action',
-    buttonText: { displayText: 'ini pesan interactiveMeta' },
-    type: 4,
-    nativeFlowInfo: {
-        name: 'single_select',
-        paramsJson: JSON.stringify({
-          title: 'Pilih Type',
-          sections: [
-            {
-              title: `© ${global.namaOwner} Version ${global.versiBot}`,
-              rows: [
-                {
-                  title: 'Brat Image',
-                  description: 'Sticker brat dengan type foto', 
-                  id: `.brat1 ${text}`
-                }
-              ]
-            }
-          ]
-        })
-      }
-      }
-  ],
-  headerType: 1,
-  viewOnce: true,
-  text: "\nPilih Type Sticker Brat (Image/Gif)\n"
-}, { quoted: m })
-}
-break
+    if (!text && !m.quoted) return m.reply("⚠️ Masukkan teks atau reply teks yang mau dijadikan brat sticker.")
 
-case "brat1": {
-if (!text) return
-const response = `https://api.nekorinn.my.id/maker/brat-v2?text=${encodeURIComponent(teks)}`
-await m.reply(`Memproses pembuatan sticker . . .`)
-await sock.sendStimg(m.chat, media, m, {packname: "VanzzOffc."})
-}
-break
+    const bratText = text || m.quoted.text
 
-case "bratvid2": {
-if (!text) return
-const media = `https://lyyn-api.my.id/imagecreator/bratvid?text=${encodeURIComponent(text)}`
-await m.reply(`Memproses pembuatan sticker . . .`)
-await sock.sendStimg(m.chat, media, m, {packname: "Vanzz Offc."})
+    try {
+        const apiUrl = `https://api.siputzx.my.id/api/m/brat?text=${encodeURIComponent(bratText)}`
+        const res = await fetch(apiUrl)
+        if (!res.ok) return m.reply(`❌ Gagal request API (status ${res.status})`)
+
+        const buffer = Buffer.from(await res.arrayBuffer())
+
+        await sock.sendMessage(m.chat, { sticker: buffer }, { quoted: m })
+    } catch (err) {
+        console.error(err)
+        m.reply("❌ Terjadi kesalahan saat membuat brat sticker.")
+    }
 }
 break
 
