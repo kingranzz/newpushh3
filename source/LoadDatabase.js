@@ -39,7 +39,7 @@ async function LoadDataBase(conn, m) {
 
     if (m.isGroup) {
       if (typeof global.db.groups[m.chat] !== 'object') global.db.groups[m.chat] = {};
-      const defaultGroup = { antilink: false, antilink2: false, bljpm: false };
+      const defaultGroup = { antilink: false, antilink2: true, bljpm: false };
       for (let key in defaultGroup) {
         if (!(key in global.db.groups[m.chat])) global.db.groups[m.chat][key] = defaultGroup[key];
       }
