@@ -152,22 +152,6 @@ const teks = `
   ┃⭔.close
   ┗❐
 
-  ┏❐  *⌜ Storemenu ⌟*
-  ┃⭔.pushkontak
-  ┃⭔.pushkontak2
-  ┃⭔.savekontak
-  ┃⭔.stoppush
-  ┃⭔.setjeda
-  ┃⭔.savenomor
-  ┃⭔.jpm
-  ┃⭔.jpmht
-  ┃⭔.jpmch
-  ┃⭔.stopjpm
-  ┃⭔.payment
-  ┃⭔.proses
-  ┃⭔.done
-  ┗❐
-
   ┏❐  *⌜ Ownermenu ⌟*
   ┃⭔.addowner
   ┃⭔.listowner
